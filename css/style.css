@@ -1,0 +1,657 @@
+/***** Main Css *****/
+
+
+/***** Table oF Content *****
+
+* banner and navbar
+* about me
+* My Skill
+* Service
+* project
+* portfolio
+* testmonial
+* contact form 
+* footer
+
+***** End *****/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* bannar and navbar starts here  */
+.banner{
+  background:url(../img/banner.jpg);
+  width:100%;
+  height:100vh;
+}
+     /* logo  */
+.logo img{
+  width:60px;
+  height:60px;
+}
+     /* nav  */
+.navbar{
+  background:#000;
+  position:fixed;
+  width:100%;
+  z-index:10;
+}
+.navbar-nav .nav-item .nav-link{
+  color:#fff;
+  padding:15px 25px;
+  font-size:18px;
+  font-weight:bold;
+  border-radius: 10px;
+  transition:0.8s ease;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  background:green;
+}
+.navbar-toggler{
+  background:#fff;
+}
+
+/* social-icon  */
+
+.social-icon{
+ font-size:30px;
+}
+.social-icon i{
+  padding:5px;
+  color:#fff;
+  transition:0.8s ease;
+}
+.social-icon i:hover{
+  color:green;
+}
+
+/* text  */
+.text-box h1{
+  color:#fff;
+  font-weight:bold;
+  font-size:50px;
+  padding-left:200px;
+  padding-top:150px;
+}
+    /* button  */
+.button{
+  padding-left:200px;
+  padding-top:15px;
+}
+.button .btn-1{
+  padding:10px 20px;
+  background:green;
+  color:#fff;
+  font-weight:bold;
+  border-radius:10px;
+  font-size:30px;
+  margin-left:10px;
+  border:none;
+}
+.button .btn-1:hover{
+  background:orange;
+  color:#fff;
+}
+.button .btn-2{
+  padding:10px 20px;
+  background:black;
+  color:#fff;
+  font-weight:bold;
+  border-radius:10px;
+  font-size:30px;
+  border:none;
+}
+.button .btn-2:hover{
+  background:green;
+  color:#fff;
+}
+
+  /***** Banner and Navbar respobsive ( mobile ) ******/
+ @media screen and (max-width:320px){
+  .text-box h1{
+  color:#fff;
+  font-weight:bold;
+  font-size:30px;
+  padding-left:50px;
+  padding-top:100px;
+}
+.button .btn-1 {
+  padding: 11px 44px;
+  background: green;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 23px;
+  margin-left: -118px;
+  border: none;
+  margin-bottom: 20px;
+}
+.button .btn-2 {
+  padding: 15px 41px;
+  background: black;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 19px;
+  border: none;
+  margin-left: -117px;
+}
+  input[type="submit"] {
+    width:200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 20px;
+    color: #fff;
+    background: black;
+    border: none;
+  }
+}
+
+
+
+
+  /***** Banner and Navbar respobsive ( mobile ) *****/
+  @media screen and (max-width: 576px){
+    .banner{
+      background:url(../img/banner.jpg);
+      width:100%;
+      height:auto;
+      padding-bottom:100px;
+    }
+  }
+
+
+ /* About Me  */
+ .about{
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.about-2{
+  width:100%;
+  height:auto;
+  margin:auto;
+  padding-top:40px;
+  text-align:center;
+}
+.about-2 h1{
+  font-size:30px;
+}
+.about-2 p{
+ font-weight:bold;
+ padding:0px 100px;
+}
+
+/* about section  */
+
+.about-section{
+  display:flex;
+  padding-top:80px;
+  justify-content: space-around;
+}
+.text-1{
+  flex-basis:31%;
+
+}
+.text-1 h3{
+  font-weight:bold;
+}
+.text-1 p{
+  font-size:18px;
+}
+
+.text-2{
+  flex-basis:31%;
+}
+.text-2 span{
+  color:red;
+  font-weight:bold;
+  padding:5px;
+}
+.text-2 h4{
+  font-weight:bold;
+  font-size:20px;
+}
+.text-3{
+  flex-basis:31%;
+}
+.text-3 span{
+  color:red;
+  font-weight:bold;
+  padding:5px;
+}
+.text-3 h4{
+  font-weight:bold;
+  font-size:20px;
+}
+
+/* ****** About responsive Mobile *****  */
+
+@media screen and (max-width: 576px){
+  .about-section {
+    display: inline-block;
+    padding-top: 80px;
+    justify-content: space-around;
+}
+.about-2 p{
+  font-size: 16px;
+  padding: 0 10px;
+}
+}
+
+/* *********************************************  */
+
+ /* My skill  */
+ .my-skill{
+   width:80%;
+   display:flex;
+   margin:auto;
+   padding:auto;
+   padding-top:30px;
+ 
+   /* skill -1  */
+ }
+ .skill-1{
+  flex-basis: 48%;
+}
+.skill-1-1 h3{
+  font-weight:bold;
+  font-size:30px;
+}
+.skill-1-1 p{
+
+  font-size:24px;
+}
+ .skill-1-2 img{
+   width:60px;
+   height:auto;
+   padding-top:10px;
+   padding-left:10px;
+ }
+   /* skill-2  */
+ .skill-2{
+  flex-basis:48%;
+  margin-left:20px;
+}
+ .skill-2 img{
+   width:100%;
+   height:auto;
+   padding:20px 0;
+   margin-right:10px;
+ }
+
+ /* skill responsive mobile  */
+ @media screen and (max-width:576px){
+  .my-skill {
+    width: 80%;
+    display: inline-block;
+    margin: auto;
+    padding: auto;
+    padding-top: 30px;
+}
+.skill-1 {
+  flex-basis: 48%;
+  width: 80%;
+  margin: auto;
+ }
+ skill-2 {
+  flex-basis: 48%;
+  width: 80%;
+  margin: auto;
+ }
+ .skill-2 img{
+  width:100%;
+  height:auto;
+  margin:auto;
+ 
+}
+ 
+}
+
+ /* ***********************************  */
+ /* SERVICE STarts here */
+ .service{
+   width:100%;
+   height:auto;
+   margin:auto;
+ }
+ .total-service{
+   width:80%;
+   padding-top:20px;
+   margin:auto;
+ }
+ .head-service{
+   text-align:center;
+   padding: 0 150px;
+ }
+ .head-service h2{
+   font-size:30px;
+   color:red;
+ }
+ .head-service p{
+   font-size:20px;
+ }
+
+    /* servic Card  */
+.service-card{
+  display:flex;
+  justify-content:space-between;
+  padding-top:30px;
+ 
+}
+.service-1{
+  flex-basis:31%;
+  justify-content: space-around;
+  text-align: center;
+}
+.service-1 i{
+  font-size:40px;
+  color:green;
+}
+.service-1 h2{
+  font-size:30px;
+}
+.service-1 p{
+  font-size:18px;
+  text-align:justify;
+
+}
+
+/* Service responsive Moblile  */
+@media screen and (max-width:576px){
+.service-card {
+    display:inline-block;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.head-service {
+    text-align: center;
+    padding:0;
+}
+.head-service p {
+  text-align: justify;
+  padding: 0;
+}
+}
+
+/* *************************************************  */
+/* project section */
+.project{
+  width:80%;
+  height:auto;
+  margin:auto;
+}
+.project-1{
+text-align:center;
+
+}
+.project-1 h2{
+ font-size:27px;
+}
+.project-1 p{
+  padding:0 100px;
+}
+   /* Project Responsive mobile  */
+   @media screen and (max-width:576px){
+    .project-1 p{
+      font-size: 16px;
+      padding: 0 2px;
+  }
+}
+
+/* ************************************************************  */
+/* portfolio  */
+.portfolio{
+  padding-top: 80px;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+/* port-text  */
+.port-1{
+  
+  text-align:center;
+  padding:0px 100px;
+}
+.port-1 p{
+  font-size:20px;
+}
+
+/* Service card port 2 */
+.port-2{
+   display:flex;
+   flex-basis:31%;
+   
+}
+.port-2-1 img{
+  width:100%;
+  height:auto;
+  padding-right:10px;
+  padding-top:10px;
+}
+.port span{
+  color:red;
+  font-weight:bold;
+}
+.port a{
+  color:blue;
+ 
+  text-decoration: none;
+}
+
+/* ------port 3 ------ */
+.port-3{
+  padding-top:20px;
+  display:flex;
+  flex-basis: 31%;
+}
+.port-3 img{
+  width:100%;
+  height:auto;
+  padding-right:10px;
+  padding-top:10px;
+}
+ /* ******** Portfolio Responisve moblie view ********** */
+@media screen and (max-width: 576px){
+  .portfolio{
+    padding-top: 80px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  .port-1 {
+    text-align: center;
+    padding: 0px;
+}
+  .port-1 p{
+    text-align:justify;
+  }
+  .port-2{
+    display:inline-block;
+    padding-top:10px;
+ }
+ .port-3 {
+  padding-top: 20px;
+  display: inline-block;
+}
+}
+
+
+/* *************************************** */
+    /* TESTIMONIAL  */
+.testmonital{
+  width:80%;
+  height:auto;
+  margin:auto;
+  padding-top:50px;
+}
+.test-1{
+  text-align:center;
+}
+.test-1 p{
+  font-size:20px;
+  padding:0 100px;
+}
+.test-2{
+  display:flex;
+  padding-top:5px;
+  flex-basis:30%;
+  justify-content: space-around;
+}
+.test-2-1{
+  flex-basis:30%;
+  justify-content: space-between;
+}
+
+/* img circle  */
+.test-test{
+   display:flex;
+   padding-top:10px;
+}
+.test-img img{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  float:left;
+ 
+}
+.test-img-text{
+  padding-right:10px;
+  float:left;
+}
+    /* Testimonial Responsive Mobile View ******** */
+    @media screen and (max-width: 576px){
+ .test-2 {
+      display: inline-block;
+      padding-top: 5px;
+      flex-basis: 30%;
+      justify-content: space-around;
+  }
+  .test-1 p{
+    text-align:justify;
+    padding:0px 0px;
+  }
+ .test-1 {
+    text-align: justify;
+}
+
+  }
+
+
+  /* ************************************************************* */
+
+   /* Contact Me  */
+.contact{
+  width:80%;
+  margin:auto;
+  padding:auto;
+  margin-top:40px;
+}
+.contact-me{
+  width:70%;
+  margin:auto;
+}
+.contact-me h2{
+  text-align:center;
+  font-weight:bold;
+
+}
+.contact-me p{
+  font-family:arial;
+  font-size:18px;
+}
+
+/* form  */
+form label{
+  font-weight:bold;
+  font-size:30px;
+}
+input[type=text], input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea{
+  width:100%;
+  display:inline-block;
+  height:80px;
+}
+input[type="submit"]{
+width:200px;
+   padding:12px 20px;
+   margin:8px 0;
+   font-size:20px;
+   color:#fff;
+   background:black;
+   border:none;
+   
+}
+input[type="submit"]:hover{
+  background:green;
+  cursor:pointer;
+}
+
+
+ /* ***************Contact Me Responsive Moblie view *************** */
+@media screen and (max-width:576px){
+
+  .contact-me{
+    width:100%;
+    margin:auto;
+    padding:auto;
+  }
+
+}
+
+
+
+/* footer part  */
+
+.footer-section{
+  width:100%;
+  background:#000;
+  color:#fff;
+  text-align:center;
+  
+}
+.social-media i{
+  font-size:30px;
+  padding:5px;
+}
+.social-media i:hover{
+  color:green;
+  cursor:pointer;
+}
+.copyright{
+  padding-bottom:10px;
+}
+.copyright i{
+  color:green;
+  font-size:20px;
+}
+.copyright p span{
+  color:green;
+  font-weight:bold;
+}
+/* ***************Contact Me Responsive Moblie view *************** */
+@media screen and (max-width:576px){
+  .footer-section{
+    width:100%;
+    background:#000;
+    color:#fff;
+    text-align:center;
+    
+  }
+  .copyright{
+    width:90%;
+  }
+
+}
